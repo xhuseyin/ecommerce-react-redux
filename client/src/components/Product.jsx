@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { addProduct } from "../redux/cartRedux";
 import { useDispatch } from "react-redux";
-import axios from "axios";
+import { publicRequest } from "../requestMethods";
 
 const Info = styled.div`
   opacity: 0;
@@ -168,7 +168,7 @@ const Product = ({ item }) => {
 
     const updateProduct = async () => {
       try {
-        await axios.put(`http://localhost:5004/api/products/${item._id}`, item);
+        await publicRequest.put(`products/${item._id}`, item);
       } catch (err) {
       }
     };

@@ -18,8 +18,8 @@ const Products = ({ brand, color, filters, sort }) => {
       try {        
         const res = await axios.get(
           brand
-            ? `http://localhost:5004/api/products?category=${brand}` 
-            : "http://localhost:5004/api/products"         
+            ? `http://localhost:5001/api/products?category=${brand}` 
+            : "http://localhost:5001/api/products"         
          );
         setProducts(res.data);        
       } catch (err) {}
@@ -32,8 +32,8 @@ const Products = ({ brand, color, filters, sort }) => {
       try {        
         const res = await axios.get(
           color
-            ? `http://localhost:5004/api/products?color=${color}` 
-            : "http://localhost:5004/api/products"         
+            ? `http://localhost:5001/api/products?color=${color}` 
+            : "http://localhost:5001/api/products"         
          );
         setProducts(res.data);        
       } catch (err) {}
