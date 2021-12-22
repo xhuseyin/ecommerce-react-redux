@@ -147,6 +147,7 @@ const ProductList = () => {
         <SearchedWordTextDark>It will come to the searched word</SearchedWordTextDark>
       </SearchedWordContainer>  
       <SortingButton onChange={(e) => setSort(e.target.value)}>          
+            <Option value="0">Sıralama</Option>
             <Option value="asc">En Düşük Fiyat</Option>
             <Option value="desc">En Yüksek Fiyat</Option>
             <Option value="newest">En Yeniler (A&gt;Z)</Option>
