@@ -115,10 +115,7 @@ font-size: 17px;
 box-sizing: border-box;
 position: relative;
 border: 1px solid #B0B0B0;
-
-// border-bottom-color: #FFFFFF;
-// border-bottom-left-radius: 0;
-// border-bottom-right-radius: 0;
+z-index: 40;
 `;
 
 const Navbar = () => {
@@ -155,7 +152,8 @@ const Navbar = () => {
         </Center>
         <Right>
         <CardWrapper onMouseLeave={handleMouseLeave}>
-        <CardButton onMouseOver={handleMouseOver} style={ isOpen === true ? { ...cartButtonStyles } : {}}>Sepetim
+        <CardButton onMouseOver={handleMouseOver} style={ isOpen === true ? { ...cartButtonStyles } : {}}>
+          Sepetim
         <Badge>
             <BadgeContent>{quantity}</BadgeContent>
         </Badge>

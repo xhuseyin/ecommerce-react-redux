@@ -14,8 +14,8 @@ border-radius: 4px;
 padding: 21px;
 width: 360px;
 height: 360px;
-overflow-x: hidden;
-overflow-y: scroll;
+// overflow-x: hidden;
+// overflow-y: scroll;
 position: absolute;
 top: 47px;
 right: 0;
@@ -94,7 +94,7 @@ const modalStyles = {
     transform: 'translate(-50%, -50%)',    
     padding: 0,
     border: 0,
-    backgroundColor: 'none',
+    backgroundColor: 'none'
   },
 };
 
@@ -147,7 +147,7 @@ const Cart = (props) => {
         isOpen={isOpen}
         onRequestClose={toggleModal}
         ariaHideApp={false}
-        style={{...modalStyles, overlay: { backgroundColor: 'rgba(0,0,0,0.3)'}}}
+        style={{...modalStyles, overlay: { zIndex:30, backgroundColor: 'rgba(0,0,0,0.3)'}}}
         >
     <Modal id={id}></Modal>
   </ModalWrapper>

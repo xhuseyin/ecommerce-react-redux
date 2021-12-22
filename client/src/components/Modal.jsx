@@ -10,7 +10,8 @@ background: #FFFFFF;
 border: 1px solid rgba(228, 228, 228, 0.6);
 box-sizing: border-box;
 box-shadow: 0px 6px 12px rgba(50, 50, 71, 0.07);
-border-radius: 4px;`;
+border-radius: 4px;
+`;
 
 const Title = styled.h1`
 font-family: Roboto;
@@ -81,7 +82,7 @@ const Modal = (props) => {
 
     return (
         <Container>
-            <Title>Ürünü silmek istediğinize emin misiniz? {props.id}</Title>
+            <Title>Ürünü silmek istediğinize emin misiniz?</Title>
             <ContentWrapper>
                 <Content>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentiall....</Content>
             </ContentWrapper>

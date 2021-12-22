@@ -54,8 +54,7 @@ const Products = ({ brand, color, filters, sort }) => {
   }, [products, brand, filters]);
 
   useEffect(() => {    
-    if (sort === "newest") {
-      console.log(filteredProducts, sort)
+    if (sort === "newest") {      
       setFilteredProducts((prev) =>
         [...prev].sort((a, b) => new Date(a.createdAt) - new Date(b.createdAt))
       );
@@ -77,13 +76,7 @@ const Products = ({ brand, color, filters, sort }) => {
 
   return (
     <Container>      
-      {/* {brand
-        ? filteredProducts.map((item) => <Product item={item} key={item._id}/>)
-        : products
-            .slice(0, 12)
-            .map((item) => <Product item={item} key={item._id}/>)}  */}
-
-{(brand || color || sort)
+      {(brand || color || sort)
         ? filteredProducts.map((item) => <Product item={item} key={item._id}/>)
         : products
             .slice(0, 12)

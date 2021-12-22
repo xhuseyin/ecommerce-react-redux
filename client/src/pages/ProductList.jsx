@@ -61,6 +61,7 @@ const Main = styled.main`
   display: flex;
   justify-content: space-between;
   padding: 0 80px;
+  position: relative;
   z-index: 20;
 `;
 
