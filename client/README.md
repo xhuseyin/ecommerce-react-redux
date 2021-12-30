@@ -1,4 +1,4 @@
-# Hepsifly Client
+# ECommerce Shopping Cart By React & Redux / Client
 
 ## Available Scripts
 
