@@ -1,4 +1,4 @@
-# Hepsifly API
+# # ECommerce Shopping Cart By React & Redux / API
 
 ## Available Scripts
 
@@ -6,7 +6,7 @@ In the project directory, you can run:
 
 ### `yarn start`
 
-# Hepsifly Client
+# # ECommerce Shopping Cart By React & Redux / Client
 
 ## Available Scripts
 
