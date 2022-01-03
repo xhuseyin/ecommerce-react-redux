@@ -31,3 +31,10 @@ MONGO_URL = mongodb+srv://<username>:<password>.!@cluster0.pw8pr.mongodb.net/hep
 PASS_SEC = ******
 JWT_SEC = ******
 
+# ToDo
+
+1. Add searhing
+2. Add pagination
+3. Fix cart and Modal style
+
+
